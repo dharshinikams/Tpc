@@ -1,0 +1,406 @@
+Back end development (API) using Node JS:
+
+Required Tools:
+download and install Node and VS Code
+1. npmjs.org
+	cmd >> 
+		node --version
+		npm --version
+
+2. MongoDB Atlas:
+
+	login into mongodb atlas
+
+
+Java script based Full stack web development:
+MERN	>> MongoDB Express React Node
+MEAN	>> MongoDB Express Angular Node
+MEVN	>> MongoDB Express Vue Node
+
+MongoDB, Express JS, Node >> Rest Client(VS Code Extension)
+
+
+
+Http	>> 8080
+
+URL based calling 
+
+
+Request: url
+Header >> Authentication
+Data transfer:
+1. Parameters(get,delete)	>> url with data>> eg: http://amazon.in/search/product='rebok shoe'
+2. Body(post/put)		>> hidden
+
+
+Mappings:   
+post,>> Create
+put,>>  Update
+delete,>> Delete
+get>> Read
+
+
+
+
+Response:
+data
+status>> 
+200,		>> ok, data
+400,		>> bad request
+500,		>> internal error
+401,		>> unauthorized
+403,		>> forbidden
+201,		>> success, no data
+404		>> not found
+
+
+
+
+run:
+python filename.py
+java filename
+gcc filename.c
+
+node filename.js
+
+
+Basic Operations:
+Data processing>> variables>> var, const, let
+Number
+String
+Object>> array, list, json
+Boolean
+
+var hai = "Razak Mohamed S"
+hai = false
+
+
+
+Functions/Operations:
+
+CRUD
+
+temporary memory
+array/list
+
+push
+pop
+map
+filter
+
+
+node package manager>> npm
+
+
+npm install 
+
+to read console inputs in node js prompt-sync:
+npm install prompot-sync
+
+
+https://github.com/razzaksr/JS-Backend-Intern-2025
+
+
+
+Bank Account:
+Account Number
+Account Balance
+Account Status
+Account Holder
+IFSC Code
+
+Student:
+Reg No
+Name
+Dept
+College
+Year
+
+Patient
+patientId
+name
+issue
+bmi
+
+list of name
+list of patientId
+list of issue
+list of bmi
+
+Java Script Object Notation
+patient:
+{
+"patientId":656789,
+"patientName":"Victor",
+"patientIssue":"ortho",
+"patientBMI":24.5,
+"patientType":"op/ip"
+}
+
+customer:
+{
+"id":765456789,
+"name":"Razak Mohamed S",
+"contact":{
+"mobile":876545678,
+"email":"razaksrmd@gmail.com",
+"address":"Salem"
+}
+"experience":12
+}
+
+
+
+JSON:
+parse	>> string to json
+stringify	>> json to string
+
+
+Bank account teller management: CRUD with JSON
+
+
+
+Patient:
+
+admitNewPatient
+viewOut
+viewIn
+updateBMI
+closePAtient
+
+
+URL Based Calling
+/icici/open		>> open
+/icici/view			>> view customers
+/icici/transaction	>> transactions
+/icici/suspend		>> closeAccount
+
+const openAccount = () =>{}
+
+
+
+API Server/ Backend/ application server	 >> port, express js
+mappings:
+post>> open
+get	> view
+put> transaction
+delete> suspend
+
+
+Client: filename.http
+Rest Client>> construct request and call the backend api via url
+
+
+
+node package manager:
+
+express
+body-parser
+nodemon		>> devtools
+mongoose
+
+
+project:
+npm init
+
+steps:
+name
+version
+.
+.
+
+npm init -y
+
+
+package.json:
+name
+dependencies
+scripts/ execution:
+package-lock.json
+
+ps1 >> running scripts disabled error
+set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+
+
+
+Web application: 
+Front end		>> UI
+Back end 	>> API
+Data end		>> database
+
+Java script >> 
+Express JS>> express
+auto restart>> nodemon
+
+project:
+	npm init
+	npm init -y
+
+run:
+	node filename.js
+
+backend:	
+	controller/ routers
+		mapping functions>> get, post, put, delete
+	
+	
+
+Client					API/Backend Server
+request						/kart/add
+							/kart/view
+							/kart/update
+
+
+Web service:
+	communication between different technologies
+common format:
+JSON(rest web service)
+XML(soap web service)
+eg: Jinja(python UI)		>> Express JS API
+jinja raise the request as json
+express respond to the jinja as json
+
+
+eg:
+Bank
+
+Internet banking>> web app
+	ui, api, database
+mobile banking	>> mobile app
+	api, database
+
+
+
+Task:
+List of number represents salary of 10 employees
+get
+1. fetch all salaries
+2. fetch salaries >= 5.5
+put
+3. update salaries into 5% if existing salaries <=1.8
+delete
+4. delete salaries >=20.5
+5. add new salary via post mapping
+
+
+
+Monolithic:
+
+amazon		>> base address
+	use('/kart',kart)	
+	use('/order',order)
+    kart>> routers
+	kart/add
+	kart/view
+	kart/update		>> amazon.in/kart/update
+	kart/delete
+   order>> routers
+	order/place
+	order/cancel
+	order/return
+	order/view
+
+
+
+rest client						api
+  http							backend
+get/delete        					request.params
+post/put						request.body
+content-type:application/json
+
+{
+	"":"",
+	"":3,
+}
+
+
+
+
+hackathon event management:
+list of hackathons contains properties such as 
+name, organizer, participants, winner, firstrunner, secondrunner
+where each hackathon contains list of participants
+condition is announce hackathon winner, firstrunner, secondrunner only if they are all participants
+note: temporary storage logic
+1. schedule hackathon	>> post
+2. enroll participants		>> put/patch
+3. update winner, firstrunner, secondrunner>> put/patch
+4. view events			>>  get
+5. cancel event			>> delete
+
+http://192.168.29.128:8081/event/view
+
+Task:
+
+Patient:
+admitNewPatient
+viewOut
+viewIn
+updateBMI
+closePAtient
+
+
+uuid	
+npm i uuid
+
+
+
+Task: 
+List of couriers and perform CRUD where each 
+courier contains id, from, to, item, status(collected, shipped, delivered, returned)
+
+1. new courier
+2. check status
+3. view shipped couriers
+4. view couriers by "from address"
+5. view all
+6. update courier status
+
+
+
+
+mongodb: perm storage
+NoSQL based database server
+
+SQL				NoSQL
+database			database
+tables			collections
+columns			fields
+rows				documents
+primary			_id
+
+
+document:
+{
+        "patientId":"dbvj8394d",
+        "patientName":"Divakar",
+        "patientIssue":"ortho",
+        "patientBMI":31.4,
+        "patientType":"ip"
+}
+
+collection>> list of documents
+
+
+server>> ip:port
+url: 27017
+
+
+backend>> localhost:8081
+
+Interactions>> driver module>> mongoose>> Object Document Mapping
+
+functionalities:
+	schema>> collections
+	CRUD
+		save/ insert
+		delete
+		find
+		get
+
+database>> cloud:27017
+
+
+npm i mongoose
